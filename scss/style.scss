@@ -304,6 +304,8 @@
 .modal {
     &-dialog {
         max-width: 641px;
+        margin-right: auto;
+        margin-left: auto;
         &2 {
             max-width: 400px;
         }

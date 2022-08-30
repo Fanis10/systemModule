@@ -905,7 +905,11 @@ button {
     padding-top: 75px;
   }
   .objects__items {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  .objects__item:nth-child(4) {
+    grid-column: unset;
+    grid-row: 3/5;
   }
 
   .social-networks {
@@ -978,14 +982,6 @@ button {
   .foundation .swiper-pagination-bullet {
     width: 7px;
     height: 7px;
-  }
-
-  .objects__items {
-    grid-template-columns: 1fr 1fr;
-  }
-  .objects__item:nth-child(4) {
-    grid-column: unset;
-    grid-row: 3/5;
   }
 
   .social-networks__right {

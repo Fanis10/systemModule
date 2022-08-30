@@ -507,7 +507,13 @@
     .objects {
         padding-top: 75px;
         &__items {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+        &__item {
+            &:nth-child(4) {
+                grid-column: unset;
+                grid-row: 3/5;
+            }
         }
     }
     .social-networks {
@@ -593,17 +599,6 @@
             &-bullet {
                 width: 7px;
                 height: 7px;
-            }
-        }
-    }
-    .objects {
-        &__items {
-            grid-template-columns: 1fr 1fr;
-        }
-        &__item {
-            &:nth-child(4) {
-                grid-column: unset;
-                grid-row: 3/5;
             }
         }
     }

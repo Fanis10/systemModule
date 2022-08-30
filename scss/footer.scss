@@ -1,0 +1,127 @@
+.footer {
+    padding: 20px 0 40px;
+    background: #F4F4F4;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+    &__desc {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        margin-left: 70px;
+        max-width: 296px;
+        span {
+            font-weight: 700;
+        }
+    }
+    &__address {
+        display: flex;
+        align-items: center;
+        position: relative;
+        &-desc {
+            font-size: 14px;
+            line-height: 120%;
+            max-width: 116px;
+            margin-left: 5px;
+        }
+    }
+    &__connection {
+        margin-left: 130px;
+        &-mob {
+            display: none;
+        }
+    }
+    &__number {
+        font-size: 24px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        color: #473B8D;
+        &-mob {
+            display: none;
+        }
+        &-desc {
+            font-size: 14px;
+            line-height: 120%;
+            letter-spacing: 0.02em;
+            margin-top: 5px;
+            a {
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #000000;
+                }
+                &:hover {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    .footer {
+        &__desc {
+            margin-left: 40px;
+        }
+        &__connection {
+            margin-left: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        padding: 15px 0 45px;
+        &__connection {
+            display: none;
+            &-mob {
+                display: block;
+                text-align: center;
+                margin-top: 40px;
+                margin-left: 0;
+            }
+        }
+        &__number {
+            &-desc {
+                margin-top: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        &__desc {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        &__logo {
+            img {
+                width: 85px;
+                height: auto;
+            }
+        }
+    }
+}
